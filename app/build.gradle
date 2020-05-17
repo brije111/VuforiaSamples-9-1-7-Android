@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 
-def VUFORIA_SDK_DIR = '../../../'
+def VUFORIA_SDK_DIR = '../vuforia_sdk'
 
 android {
     compileSdkVersion 27
