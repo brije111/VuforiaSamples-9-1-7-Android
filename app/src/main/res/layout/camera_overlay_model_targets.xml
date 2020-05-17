@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_overlay_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <include layout="@layout/sample_app_title_bar"/>
+
+        <RelativeLayout
+            android:id="@+id/reset_btn_overlay_layout"
+            android:layout_width="@dimen/button_reset_dimens"
+            android:layout_height="@dimen/button_reset_dimens"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/reset_btn"
+                    android:background="@drawable/selector_btn_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+        </RelativeLayout>
+</RelativeLayout>

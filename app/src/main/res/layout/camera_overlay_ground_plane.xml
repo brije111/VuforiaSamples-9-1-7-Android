@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar"
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:id="@+id/ground_plane_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/topbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#7E000000">
+
+            <TextView
+                android:id="@+id/topbar_title"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/feature_ground_plane"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/mode_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icon_ground_plane"
+                android:contentDescription="@string/mode_description" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_furniture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_btn_product"
+                android:background="@color/transparent"
+                android:contentDescription="@string/mode_product_placement"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/modes_buttons_spacing" />
+
+            <ImageButton
+                android:id="@+id/btn_astro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/feature_ground_plane"
+                android:src="@drawable/selector_btn_astro" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/modes_buttons_spacing" />
+
+            <ImageButton
+                android:id="@+id/btn_drone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/mode_mid_air"
+                android:src="@drawable/selector_btn_drone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/modes_buttons_spacing" />
+
+            <ImageButton
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/feature_ground_plane"
+                android:src="@drawable/selector_btn_reset" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/instructions_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/semi_transparent_black"
+            >
+
+            <TextView
+                android:id="@+id/instruction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

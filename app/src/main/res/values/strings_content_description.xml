@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="descr_loading_icon">Progress indicator</string>
+    <string name="descr_scan_line">Scan line</string>
+    <string name="descr_vumark_instance">Detected VuMark image</string>
+    <string name="descr_btn_reset">Reset Button</string>
+    <string name="descr_checkmark">Checkmark Icon</string>
+    <string name="descr_model_bike">Bike Model</string>
+    <string name="descr_model_lander">Lander Model</string>
+    <string name="descr_reticle_searching">Searching Reticle</string>
+
+</resources>
