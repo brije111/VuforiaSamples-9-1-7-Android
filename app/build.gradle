@@ -3,18 +3,17 @@ apply plugin: 'com.android.application'
 def VUFORIA_SDK_DIR = '../vuforia_sdk'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
 
     sourceSets.main {
-        jni.srcDirs = []
         jniLibs.srcDir "$VUFORIA_SDK_DIR/build/lib/"
     }
 
     defaultConfig {
         applicationId "com.vuforia.engine.CoreSamples"
         minSdkVersion 19
-        targetSdkVersion 27
+        targetSdkVersion 31
         versionCode 910
         versionName "9.1"
 
@@ -29,9 +28,6 @@ android {
 
     // Ensure that Vuforia Engine datasets placed in the assets folder do not get compressed as
     // this can significantly increase their loading time
-    aaptOptions {
-        noCompress 'dat'
-    }
 
     buildTypes {
         release {
@@ -42,10 +38,13 @@ android {
             debuggable true
         }
     }
+    androidResources {
+        noCompress 'dat'
+    }
 }
 
 dependencies {
     implementation files("$VUFORIA_SDK_DIR/build/java/Vuforia/Vuforia.jar")
     // ARCore library
-    implementation 'com.google.ar:core:1.10.0'
+    implementation 'com.google.ar:core:1.28.0'
 }

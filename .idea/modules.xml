@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VuforiaSamples-9-1-7.iml" filepath="$PROJECT_DIR$/VuforiaSamples-9-1-7.iml" group="VuforiaSamples-9-1-7" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="VuforiaSamples-9-1-7/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VuforiaSamples-9-1-7-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/VuforiaSamples-9-1-7-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VuforiaSamples-9-1-7-Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VuforiaSamples-9-1-7-Android.app.iml" />
     </modules>
   </component>
 </project>
